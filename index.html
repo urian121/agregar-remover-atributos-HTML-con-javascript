@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar o Remover atributos HTML con JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+  </head>
+  <body>
+    <div class="container" style="margin-top: 100px">
+      <h4>Agregando Atributos HTML</h4>
+      <div class="row">
+        <div class="column">
+          <input type="text" id="miInput" required />
+        </div>
+        <div class="column">
+          <button
+            class="button button-outline"
+            onclick="agregarAtributosHTML()">
+            Agregar atributo HTML
+          </button>
+        </div>
+      </div>
+
+      <hr />
+      <h4>Eliminar Atributos HTML</h4>
+      <div class="row">
+        <div class="column">
+          <input type="text" id="miInput_2" required />
+        </div>
+        <div class="column">
+          <button
+            class="button button-outline"
+            onclick="eliminarAtributoHTML()">
+            Eliminar atributo
+          </button>
+        </div>
+      </div>
+      <hr />
+
+      <h3>Eliminar atributo HTML caso 2</h3>
+      <div class="row">
+        <div class="column">
+          <input
+            type="text"
+            id="miInput_3"
+            placeholder="Ingrese su nombre"
+            maxlength="50" />
+        </div>
+        <div class="column">
+          <button
+            class="button button-outline"
+            onclick="eliminarAtributosHTML_Caso2()">
+            Eliminar atributo
+          </button>
+        </div>
+      </div>
+      <hr />
+
+      <h3>Habilitar Input</h3>
+
+      <div class="row">
+        <div class="column">
+          <input type="text" id="miInput_disabled" required disabled />
+        </div>
+        <div class="column">
+          <button class="button" onclick="habilitarInput()">Habilitar</button>
+        </div>
+      </div>
+      <hr />
+
+      <h3>Desabilitando Input 3</h3>
+      <div class="row">
+        <div class="column">
+          <input type="text" id="miInput_desab" required />
+        </div>
+        <div class="column">
+          <button class="button" onclick="deshabilitarCampo()">
+            Habilitar
+          </button>
+        </div>
+      </div>
+      <hr />
+
+      <h3>Habilitar y Desabilitar Button</h3>
+      <hr />
+      <div class="row">
+        <div class="column">
+          <button class="button" onclick="habilitarDesabilitar()">
+            Habilitar btn
+          </button>
+        </div>
+        <div class="column">
+          <button class="button" id="miBoton" disabled>Soy Button</button>
+        </div>
+      </div>
+      <hr />
+
+      <h2>Mostar/Ocultar</h2>
+      <div class="row">
+        <div class="column">
+          <button class="button" id="mostrar_ocultar">Habilitar</button>
+        </div>
+        <p class="contenido">
+          ¿Te apasiona la programación? Si eres un fanático del desarrollo web,
+          te recomiendo que te suscribas al canal WebDeveloper, ya que
+          encontrarás material de alta calidad con ejemplos de la vida real para
+          que puedas aprender de manera efectiva. No te pierdas la oportunidad
+          de mejorar tus habilidades y conocimientos en el fascinante mundo de
+          la programación web.
+        </p>
+      </div>
+
+      <br /><br />
+      <br /><br />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
