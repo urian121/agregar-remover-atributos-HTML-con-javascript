@@ -49,7 +49,7 @@ function deshabilitarCampo() {
 const habilitarDesabilitar = () => {
   let miBoton = document.querySelector("#miBoton");
   // Deshabilitar el botón
-  miBoton.disabled = true;
+  miBoton.disabled = false;
 
   //Otra forma que funciona como un Switch
   /*
